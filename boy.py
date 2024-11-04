@@ -95,8 +95,8 @@ class Run:
 
 class Boy:
 
-    def __init__(self):
-        self.x, self.y = 400, 90
+    def __init__(self,x=400,y=90):
+        self.x, self.y = x, y
         self.face_dir = 1
         self.image = load_image('animation_sheet.png')
         self.state_machine = StateMachine(self)
